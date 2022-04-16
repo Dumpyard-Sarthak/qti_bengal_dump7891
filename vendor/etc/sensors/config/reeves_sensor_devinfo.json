@@ -1,0 +1,34 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD"],
+    "soc_id": ["518"]
+  },
+  "sensor_devinfo":{
+    "owner": "NA",
+    ".als":{
+      "owner": "NA",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "alsps_platform.als.fac_cal"
+      }
+    },
+    ".gsensor":{
+      "owner": "NA",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "bmi3x0_0_platform.accel.fac_cal.bias"
+      }
+    },
+    ".mag":{
+      "owner": "NA",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "defualt"
+      }
+    },
+    ".gyro":{
+      "owner": "NA",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "bmi3x0_0_platform.gyro.fac_cal.bias"
+      }
+    }
+  }
+}

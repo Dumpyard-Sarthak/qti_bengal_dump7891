@@ -1,0 +1,17 @@
+on late-init
+    chmod 0664 /dev/mdmfeature
+    chown system system /dev/mdmfeature
+
+
+service update_feature_map /odm/bin/hw/mdm_feature update_feature_map
+    class core
+    user root
+    group root shell system radio
+    oneshot
+
+service read_feature_map /odm/bin/hw/mdm_feature read_feature_map
+    class early_hal
+    user root
+    group root shell system radio
+    disabled
+    oneshot

@@ -1,0 +1,7 @@
+#!/system/bin/sh
+#enable wifi
+#To disable scan
+iwpriv wlan0 setUnitTestCmd 9 2 1 0
+iwpriv wlan0 scan_disable 1
+
+sleep 1

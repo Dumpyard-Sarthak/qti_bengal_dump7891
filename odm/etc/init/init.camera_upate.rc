@@ -1,0 +1,16 @@
+on post-fs-data
+    mkdir /data/vendor/camera_update 0777 camera camera
+    write /data/vendor/camera_update/reservetuningbin0 ""
+    write /data/vendor/camera_update/reservetuningbin1 ""
+    write /data/vendor/camera_update/reservetuningbin2 ""
+    write /data/vendor/camera_update/reservetuningbin3 ""
+    write /data/vendor/camera_update/reservetuningbin4 ""
+    write /data/vendor/camera_update/reservetuningbin5 ""
+    write /data/vendor/camera_update/reservetuningbin6 ""
+    chmod 0666 /data/vendor/camera_update/reservetuningbin0
+    chmod 0666 /data/vendor/camera_update/reservetuningbin1
+    chmod 0666 /data/vendor/camera_update/reservetuningbin2
+    chmod 0666 /data/vendor/camera_update/reservetuningbin3
+    chmod 0666 /data/vendor/camera_update/reservetuningbin4
+    chmod 0666 /data/vendor/camera_update/reservetuningbin5
+    chmod 0666 /data/vendor/camera_update/reservetuningbin6

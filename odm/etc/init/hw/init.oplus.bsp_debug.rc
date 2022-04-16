@@ -1,0 +1,80 @@
+##################################################################################
+### Oplus All rights reserved.
+###
+### File: - init.oplus.bsp_debug.rc
+### Author: wen.luo@BSP.Kernel.Stability
+###
+### ------------------------------- Revision History: ----------------------------
+### <author>                        <data>       <version>   <desc>
+### ------------------------------------------------------------------------------
+### 2019-11-10     wen.luo            Create this file    1.0        bsp debug/tracing
+##################################################################################
+
+#for agingtest ftrace
+on property:persist.sys.agingtest=1
+    write /dev/kmsg "Ftrace Debug:init.oplus.bsp_debug.rc"
+    # timer
+    chmod 0755 /sys/kernel/debug/tracing
+    write /sys/kernel/debug/tracing/events/timer/timer_expire_entry/enable 1
+    write /sys/kernel/debug/tracing/events/timer/timer_expire_exit/enable 1
+    write /sys/kernel/debug/tracing/events/timer/hrtimer_cancel/enable 1
+    write /sys/kernel/debug/tracing/events/timer/hrtimer_expire_entry/enable 1
+    write /sys/kernel/debug/tracing/events/timer/hrtimer_expire_exit/enable 1
+    write /sys/kernel/debug/tracing/events/timer/hrtimer_init/enable 1
+    write /sys/kernel/debug/tracing/events/timer/hrtimer_start/enable 1
+    #enable FTRACE for softirq events
+    write /sys/kernel/debug/tracing/events/irq/enable 1
+    #enble FTRACE for Workqueue events
+    write /sys/kernel/debug/tracing/events/workqueue/enable 1
+    # schedular
+    write /sys/kernel/debug/tracing/events/sched/sched_migrate_task/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_pi_setprio/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_switch/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_wakeup/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_wakeup_new/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_isolate/enable 1
+    # video
+    write /sys/kernel/debug/tracing/events/msm_vidc_events/enable 1
+    # clock
+    write /sys/kernel/debug/tracing/events/power/clock_set_rate/enable 1
+    write /sys/kernel/debug/tracing/events/power/clock_enable/enable 1
+    write /sys/kernel/debug/tracing/events/power/clock_disable/enable 1
+    write /sys/kernel/debug/tracing/events/power/cpu_frequency/enable 1
+    # regulator
+    write /sys/kernel/debug/tracing/events/regulator/enable 1
+    # power
+    write /sys/kernel/debug/tracing/events/msm_low_power/enable 1
+    #rmph_send_msg
+    write /sys/kernel/debug/tracing/events/rpmh/rpmh_send_msg/enable 1
+    #enable aop with timestamps
+    #memory pressure events/oom
+    write /sys/kernel/debug/tracing/events/psi/psi_event/enable 1
+    write /sys/kernel/debug/tracing/events/psi/psi_window_vmstat/enable 1
+    #Enable irqsoff/preempt tracing
+    write /sys/kernel/debug/tracing/events/preemptirq_long/enable 1
+    write /d/tracing/events/preemptirq_long/preempt_disable_long/trigger "stacktrace"
+    write /d/tracing/events/preemptirq_long/irq_disable_long/trigger "stacktrace"
+    #enable Tracing
+    write /sys/kernel/debug/tracing/tracing_on 1
+
+    #subsystem SSR config(open wlan esoc SSR)
+    #write /sys/bus/msm_subsys/devices/subsys9/restart_level "related"
+
+
+#for agingtest dcc debug
+on property:persist.sys.agingtest=1
+    start bsp_debug
+
+service bsp_debug /vendor/bin/sh /odm/bin/init.oplus.bsp_debug.sh
+    class core
+    user shell
+    group root system log
+    disabled
+    oneshot
+
+service bsp_us_dump /vendor/bin/sh /odm/bin/init.oplus.bsp_us_dump.sh
+    class core
+    user shell
+    group root system log
+    disabled
+    oneshot

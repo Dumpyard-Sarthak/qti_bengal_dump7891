@@ -1,0 +1,16 @@
+subsystem adf
+    devname uevent_devname
+
+#add for oplusreserve1 access
+/dev/block/bootdevice/by-name/oplusreserve1               0660   root     system
+/dev/block/sdf8   0660   root     system
+
+#add for oplusreserve3 access
+/dev/block/by-name/oplusreserve3               0660   root     system
+/dev/block/sdf10   0660   root     system
+
+/dev/block/bootdevice/by-name/ddr                0660           root     system
+/dev/block/sdd3                                  0660           root     system
+/dev/block/sde3                                  0660           root     system
+/dev/block/sdf3                                  0660           root     system
+

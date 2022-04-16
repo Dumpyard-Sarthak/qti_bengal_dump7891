@@ -1,0 +1,93 @@
+{
+    "com.twitter.android": {
+        "previewSizeForAPI1Width":1920,
+        "previewSizeForAPI1Height":1080,
+    },
+    "com.alibaba.aliexpresshd": {
+        "previewSizeForAPI1Width":1520,
+        "previewSizeForAPI1Height":720,
+    },
+    "vStudio.Android.Camera360":{
+        "previewSizeForAPI1Width":1920,
+        "previewSizeForAPI1Height":1080,
+    },
+    "com.whatsapp.w4b": {
+        "app_enable_rio": true,
+        "maxPreviewWidthForAPI2cameraId0": 1920,
+        "maxPreviewHeightForAPI2cameraId0": 1080,
+        "maxPreviewWidthForAPI2cameraId1": 1920,
+        "maxPreviewHeightForAPI2cameraId1": 1080,
+    },
+    "com.whatsapp": {
+        "maxWidthFilterForNotAddSizeAPI1": 3840,
+        "maxHeightFilterForNotAddSizeAPI1": 2160,
+        "maxPreviewWidthForAPI2cameraId0": 3840,
+        "maxPreviewHeightForAPI2cameraId0": 2160,
+        "maxPreviewWidthForAPI2cameraId1": 3840,
+        "maxPreviewHeightForAPI2cameraId1": 2160,
+    },
+    "com.meitu.wheecam" :  {
+        "maxWidthFilterForNotAddSizeAPI1": 1600,
+        "maxHeightFilterForNotAddSizeAPI1": 720,
+        "maxPreviewWidthForAPI2cameraId0": 1600,
+        "maxPreviewHeightForAPI2cameraId0": 720,
+        "maxPreviewWidthForAPI2cameraId1": 1600,
+        "maxPreviewHeightForAPI2cameraId1": 720,
+    },
+    "com.manboker.headportrait": {
+        "maxWidthFilterForNotAddSizeAPI1": 1280,
+        "maxHeightFilterForNotAddSizeAPI1": 720,
+        "maxPreviewWidthForAPI2cameraId0": 1280,
+        "maxPreviewHeightForAPI2cameraId0": 720,
+        "maxPreviewWidthForAPI2cameraId1": 1280,
+        "maxPreviewHeightForAPI2cameraId1": 720,
+    },
+    "in.mohalla.sharechat" :  {
+        "maxPreviewWidthForAPI2cameraId0": 1600,
+        "maxPreviewHeightForAPI2cameraId0": 720,
+        "maxPreviewWidthForAPI2cameraId1": 1600,
+        "maxPreviewHeightForAPI2cameraId1": 720,
+    },
+    "com.skype.raider": {
+        "needLimitFpsForAPI1": true,
+        "maxWidthFilterForNotAddSizeAPI1": 1280,
+        "maxHeightFilterForNotAddSizeAPI1": 720,
+        "maxPreviewWidthForAPI2cameraId0": 1920,
+        "maxPreviewHeightForAPI2cameraId0": 1080,
+        "maxPreviewWidthForAPI2cameraId1": 1920,
+        "maxPreviewHeightForAPI2cameraId1": 1080,
+    },
+    "com.microsoft.teams" :{
+        "maxWidthFilterForNotAddSizeAPI1": 1920,
+        "maxHeightFilterForNotAddSizeAPI1": 1080,
+        "maxPreviewWidthForAPI2cameraId0": 1920,
+        "maxPreviewHeightForAPI2cameraId0": 1080,
+        "maxPreviewWidthForAPI2cameraId1": 1920,
+        "maxPreviewHeightForAPI2cameraId1": 1080,
+    },
+    "com.microsoft.office.officehubrow" :{
+        "limitPicture":true,
+        "maxWidthFilterForNotAddSizeAPI1": 960,
+        "maxHeightFilterForNotAddSizeAPI1": 720,
+        "maxPreviewWidthForAPI2cameraId0": 960,
+        "maxPreviewHeightForAPI2cameraId0": 720,
+        "maxPreviewWidthForAPI2cameraId1": 960,
+        "maxPreviewHeightForAPI2cameraId1": 720,
+    },
+    "com.google.android.apps.messaging": {
+        "previewSizeForAPI1Width":1920,
+        "previewSizeForAPI1Height":1080,
+    },
+    "com.flavionet.android.camera.lite" :  {
+        "maxPreviewWidthForAPI2cameraId0": 1440,
+        "maxPreviewHeightForAPI2cameraId0": 1080,
+        "maxPreviewWidthForAPI2cameraId1": 1440,
+        "maxPreviewHeightForAPI2cameraId1": 1080,
+    },
+    "com.mt.mtxx.mtxx" :{
+        "maxPreviewWidthForAPI2cameraId0": 1600,
+        "maxPreviewHeightForAPI2cameraId0": 720,
+        "maxPreviewWidthForAPI2cameraId1": 1600,
+        "maxPreviewHeightForAPI2cameraId1": 720,
+    }
+}

@@ -1,0 +1,4 @@
+#!/system/bin/sh
+setenforce 0
+svc wifi disable
+ftmdaemon -n

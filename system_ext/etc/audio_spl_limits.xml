@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<limits>
+    <limit level="75">
+        <ratio>0,100</ratio>
+        <ratio>1,130</ratio>
+        <ratio>2,137</ratio>
+        <ratio>3,143</ratio>
+        <ratio>4,156</ratio>
+        <ratio>5,173</ratio>
+        <ratio>6,195</ratio>
+        <ratio>7,200</ratio>
+        <ratio>8,210</ratio>
+        <ratio>9,220</ratio>
+        <ratio>10,234</ratio>
+        <ratio>11,258</ratio>
+        <ratio>12,292</ratio>
+        <ratio>13,331</ratio>
+        <ratio>14,410</ratio>
+        <ratio>15,630</ratio>
+        <ratio>16,1980</ratio>
+    </limit>
+
+    <limit level="80">
+        <ratio>0,100</ratio>
+        <ratio>1,125</ratio>
+        <ratio>2,130</ratio>
+        <ratio>3,137</ratio>
+        <ratio>4,150</ratio>
+        <ratio>5,170</ratio>
+        <ratio>6,192</ratio>
+        <ratio>7,196</ratio>
+        <ratio>8,205</ratio>
+        <ratio>9,216</ratio>
+        <ratio>10,230</ratio>
+        <ratio>11,230</ratio>
+        <ratio>12,255</ratio>
+        <ratio>13,290</ratio>
+        <ratio>14,350</ratio>
+        <ratio>15,530</ratio>
+        <ratio>16,1580</ratio>
+    </limit>
+
+    <limit level="85">
+        <ratio>0,100</ratio>
+        <ratio>1,112</ratio>
+        <ratio>2,115</ratio>
+        <ratio>3,120</ratio>
+        <ratio>4,132</ratio>
+        <ratio>5,145</ratio>
+        <ratio>6,162</ratio>
+        <ratio>7,165</ratio>
+        <ratio>8,170</ratio>
+        <ratio>9,175</ratio>
+        <ratio>10,185</ratio>
+        <ratio>11,200</ratio>
+        <ratio>12,220</ratio>
+        <ratio>13,240</ratio>
+        <ratio>14,280</ratio>
+        <ratio>15,410</ratio>
+        <ratio>16,1180</ratio>
+    </limit>
+
+    <limit level="90">
+        <ratio>0,100</ratio>
+        <ratio>1,101</ratio>
+        <ratio>2,105</ratio>
+        <ratio>3,108</ratio>
+        <ratio>4,117</ratio>
+        <ratio>5,130</ratio>
+        <ratio>6,142</ratio>
+        <ratio>7,142</ratio>
+        <ratio>8,145</ratio>
+        <ratio>9,150</ratio>
+        <ratio>10,160</ratio>
+        <ratio>11,170</ratio>
+        <ratio>12,185</ratio>
+        <ratio>13,200</ratio>
+        <ratio>14,220</ratio>
+        <ratio>15,300</ratio>
+        <ratio>16,780</ratio>
+    </limit>
+
+    <limit level="95">
+        <ratio>0,100</ratio>
+        <ratio>1,101</ratio>
+        <ratio>2,101</ratio>
+        <ratio>3,101</ratio>
+        <ratio>4,108</ratio>
+        <ratio>5,118</ratio>
+        <ratio>6,128</ratio>
+        <ratio>7,128</ratio>
+        <ratio>8,129</ratio>
+        <ratio>9,130</ratio>
+        <ratio>10,135</ratio>
+        <ratio>11,140</ratio>
+        <ratio>12,145</ratio>
+        <ratio>13,150</ratio>
+        <ratio>14,160</ratio>
+        <ratio>15,200</ratio>
+        <ratio>16,380</ratio>
+    </limit>
+</limits>

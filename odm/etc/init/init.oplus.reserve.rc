@@ -1,0 +1,52 @@
+##################################################################################
+### oplus All rights reserved.
+###
+### File: - init.oplus.reserve.rc
+###
+### ------------------------------- Revision History: ----------------------------
+### <author>                        <data>       <version>   <desc>
+### ------------------------------------------------------------------------------
+### Runsheng.Pei@PSW.AD.Storage.ReservePartition.1207580, 2017/12/29, Add for new reserve partition
+### Xuefeng.Peng@PSW.AD.Storage.ReservePartition.1207580, 2018/11/19, Add for change oplusreserve mount point for google GSI test
+##################################################################################
+on post-fs-data
+  chown system system /mnt/vendor/oplusreserve
+  chmod 0771 /mnt/vendor/oplusreserve
+  mkdir /mnt/vendor/oplusreserve/radio 0771 radio system
+  mkdir /mnt/vendor/oplusreserve/system 0771 system system
+  mkdir /mnt/vendor/oplusreserve/system/config 0771 system system
+  mkdir /mnt/vendor/oplusreserve/system/ssv 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media 0771 system system 
+# mount sdcardfs /dev/block/bootdevice/by-name/mnt/vendor/oplusreserve2 /mnt/vendor/oplusreserve/media reserved_mb=24
+  mkdir /mnt/vendor/oplusreserve/media/dropbox 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/log 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/log/usage 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/log/usage/cache 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/log/usage/persist 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/log/criticalLog 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/log/criticalLog/persist 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/log/criticalLog/cache 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/engineermode 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/ColorOS 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/Camera 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/ColorOS/HeytapID 0771 system system
+##ifdef OPLUS_FEATURE_TOOLS
+  #Zhuan.Pan@BSP.Tool, Add for mount stamp.db
+  mkdir /mnt/vendor/oplusreserve/media/log/stamp 0771 system system
+##endif OPLUS_FEATURE_TOOLS
+#ifdef OPLUS_FEATURE_SHUTDOWN_DETECT
+#Bin.Xu@BSP.kernel.Stability, 2020/4/28, add for shutdown_detect
+  mkdir /mnt/vendor/oplusreserve/media/log/shutdown 0771 system system
+#endif
+#ifdef OPLUS_FEATURE_PHOENIX
+  mkdir /mnt/vendor/oplusreserve/media/log/hang_oplus 0771 system system
+  mkdir /mnt/vendor/oplusreserve/media/log/boot_log 0771 system system
+  mkdir /mnt/vendor/oplusreserve/rbr_log 0771 system system
+#endif
+  #Fangfang.Hui@BSP.Stability, 2020/09/04, Add for backup the feedback log to oplusreserve2 partition
+  mkdir /mnt/vendor/oplusreserve/media/log/minidump 0771 system system
+  restorecon_recursive /mnt/vendor/oplusreserve
+#wenjie.Liu@CN.NFC.Basic.Felica.1334855,add for: Felica Nvram store in oplusreserve
+  mkdir /mnt/vendor/oplusreserve/media/nfclock 0771 system system
+  mkdir /mnt/vendor/oplusreserve/connectivity 0771 nfc system
+  mkdir /mnt/vendor/oplusreserve/connectivity/felicalock 0771 nfc system

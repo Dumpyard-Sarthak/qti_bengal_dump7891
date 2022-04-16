@@ -1,0 +1,35 @@
+#!/vendor/bin/sh
+
+#svc wifi disable
+#sleep 10
+insmod vendor/lib/modules/qca_cld3_wlan.ko
+sleep 1
+ifconfig wlan0 up
+sleep 9
+echo 5 > /sys/module/wlan/parameters/con_mode
+#modify for con_mode is 0
+cnt=0
+while true
+do
+    mode=$(cat /sys/module/wlan/parameters/con_mode)
+    #echo $mode
+    if test $mode -eq 0
+    then
+       #echo "is 0"
+       echo 5 > /sys/module/wlan/parameters/con_mode
+    else
+       #echo "is 5"
+       break
+    fi
+
+    let cnt+=1
+    #echo $cnt
+    if test $cnt -eq 6
+    then
+        break
+    fi
+    sleep 1
+done
+
+#sleep 1
+ftmdaemon -n -dd

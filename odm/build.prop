@@ -1,0 +1,56 @@
+# build prop start
+persist.vendor.engineer.hide.log=6996
+persist.vendor.engineer.hide.warn=6776
+ro.product.bootreg.disable.command=true
+ro.oplus.system.camera.name=com.oplus.camera
+ro.soc.manufacturer=QTI
+ro.soc.model=SM6225
+ro.build.release_type=true
+persist.sys.assert.state=false
+persist.sys.assert.panic=false
+persist.sys.dump=0
+persist.sys.powerkeydump=0
+persist.sys.assert.enabletip=0
+persist.sys.log.user=1
+ro.vendor.qti.va_odm.support=1
+ro.com.android.dataroaming=false
+persist.vendor.radio.custom_ecc=0
+persist.vendor.ims.disableADBLogs=0
+persist.vendor.ims.disableDebugLogs=0
+persist.vendor.ims.disableQXDMLogs=0
+persist.vendor.ims.disableIMSLogs=0
+persist.vendor.ims.rtp.enableqxdm=15
+persist.vendor.ims.vt.enableadb=3
+persist.vendor.ims.loglevel=255
+persist.ims.disableADBLogs=0
+persist.ims.disableDebugLogs=0
+persist.ims.disableQXDMLogs=0
+persist.ims.disableIMSLogs=0
+ro.separate.soft=2172F
+ro.build.kernel.id=4.19.152
+ro.rom.featrue=allnet
+ro.vendor.product.oem=RMX3521
+ro.vendor.product.device.oem=RE54E2
+ro.commonsoft.ota=RE54E2L1
+persist.version.confidential=false
+ro.version.confidential=false
+ro.build.version.oplusrom=V12.1
+ro.build.version.oplusrom.confidential=V12.1
+ro.vendor.oplus.market.name=RMX3521
+ro.build.display.id=RMX3521_11_A.01
+ro.build.display.full_id=RMX3521_11_A.01_220404
+ro.sys.reserve.integrate=true
+persist.sys.oppo.fusionlight=true
+persist.sys.oplus.nandswap.condition=true
+ro.oplus.screenhole.border=10
+ro.telephony.default_network=22,20
+persist.radio.multisim.config=dsds
+ro.product.oem_dm=1
+persist.vendor.entitlement_enabled=0
+persist.sys.oplus.radio.signal_recovery.config=1,1,1800,30,10,20,30,86400,10,60,120,1,0,0,1,0,0,0
+odm.dirac.path=/odm/etc/dirac
+ro.oplus.image.odm.type=2172F
+import /odm/etc/${ro.boot.prjname}/build.prop
+import /mnt/vendor/my_manifest/build.prop
+# DONOT_GENERATE_FEC is 
+ro.oplus.image.odm.version=version_stub.c86753e4
